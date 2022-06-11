@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+   
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'clock')">Clock</button>
+  <button class="tablinks" onclick="openCity(event, 'timer')">Timer</button>
+  <button class="tablinks" onclick="openCity(event, 'countdown')">Countdown</button>
+</div>
+
+<div id="clock" class="tabcontent">
+    <div id= "clockline">
+        <div id="clock"></div>
+        <button onclick=firstFormat()> 12 Hours format</button>
+        <button onclick=secondFormat()> 24 Hours format</button>
+    </div> 
+</div>
+
+<div id="timer" class="tabcontent">
+  
+    <span class="time" id="display">00:00:00:00</span>
+     
+    <div class="controls"></div>
+      <button  id="playButton"class="buttonPlay"> Start </button>
+      <button  id="pauseButton" class="buttonPlay">Pause </button>
+
+      <button id="resetButton"  class="buttonReset">
+        reset </button>
+    </div>
+  
+</div>
+
+<div id="countdown" class="tabcontent">
+  
+  
+<input type="datetime-local" id = "inp1">
+<div id = "display"></div>
+   
+  <h2 id="end"></h2>
+<button  id="start" onclick= "startButton()">start</button>
+<button  id="reset" onclick="resetButton()">Reset</button>
+
+    
+
+
+</div>
+<script src="main.js" type="text/javascript"></script>
+
+
+</script>
+</body>
+
+</html>
